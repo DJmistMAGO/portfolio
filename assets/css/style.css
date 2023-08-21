@@ -1,6 +1,6 @@
 body {
-  padding-top: 70px;
-  background-color: black;
+  padding-top: 5px;
+  background-color: #0b1629;
   font-family: "Open Sans", sans-serif;
   transition: all 0.5s ease-in-out;
 }
@@ -12,19 +12,74 @@ body {
   justify-content: center;
   padding: auto;
   margin: auto;
+  background-color: #0b1629;
 }
 
 #section1 {
-  background-color: black;
+  background-color: #0b1629;
+  padding-top: 5px;
   color: white;
-  background-image: url("../images/b1.svg"), url("../images/b2.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
-  background-position: calc(80% - 60vw) calc(50% - 50vh),
-    calc(50% + 40vw) calc(50% + 50vh);
-  animation: blobanimation 10s infinite;
+  background-image: url("../images/b1.svg"), url("../images/b1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: calc(50% - 60vw) calc(50% - 5vh),
+    calc(50% + 40vw) calc(50% + 30vh);
+  margin: auto;
+}
+
+#section2 {
+  background-image: url("../images/b1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: calc(50% + 40vw) calc(50% - 70vh);
+}
+
+#section5 {
+  background-image: url("../images/b1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: calc(50% - 40vw) calc(50% + 10vh);
 }
 
 .navbar-nav li a.active {
   color: rgb(30, 73, 244) !important;
+}
+
+nav {
+  transition: background-color 0.5s ease-in;
+}
+
+.navbar-scrolled {
+  background-color: #0a1121;
+  transition: background-color 0.5s ease-in;
+}
+
+nav .navbar-brand {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+footer {
+  background-color: #0a1121;
+  color: white;
+}
+
+#mod p {
+  font-size: 8px;
+  line-height: 9px;
+  text-align: justify;
+  background-image: url("../images/pic1.jpg");
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0a1121;
+  margin: 0;
+  padding: 0;
+}
+
+#mod {
+  background-color: #0b1629;
+  border-radius: 80% 35% 80% 75% / 35% 80% 35% 80%;
+  overflow: hidden;
+  padding: 0;
+  margin: 10px auto 0;
 }
