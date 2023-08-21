@@ -1,0 +1,30 @@
+body {
+  padding-top: 70px;
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+}
+
+#section1 {
+  background-color: black;
+  color: white;
+  background-image: url("../images/b1.svg"), url("../images/b2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  background-position: calc(80% - 60vw) calc(50% - 50vh),
+    calc(50% + 40vw) calc(50% + 50vh);
+  animation: blobanimation 10s infinite;
+}
+
+.navbar-nav li a.active {
+  color: rgb(30, 73, 244) !important;
+}
